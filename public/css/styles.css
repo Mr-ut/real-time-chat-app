@@ -25,7 +25,9 @@
     margin-right: 20px;
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-weight: 500;
+    font-weight: 700;
+    background: transparent;
+    border: none;
 }
 .content{
     display: flex;
@@ -35,8 +37,10 @@
 }
 .groups{
     width: 30%;
+    /* height: 94.6vh; media query */
     background: rgba(94, 74, 227, 0.87);
-    padding-right: 100px;
+    padding-right: 20px;
+    margin-right: 1rem;
 }
 .group_logo{
     display: flex;
@@ -108,4 +112,70 @@ form button{
 form button:hover{
     cursor: pointer;
     border: 1px solid rgba(69, 55, 166, 1);
+}
+.chat-window{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.chats{
+    min-height: 78.8vh;
+    padding: 10px;
+}
+.user-join{
+    font-size: 0.9rem;
+    background-color: rgba(204, 204, 204, 1);
+    border-radius: 10px;
+    /* width: max-content; */
+    width: 10rem;
+    padding: 10px 10px;
+    margin: 3px auto;
+}
+.message{
+    background-color: rgba(204, 204, 204, 1);
+    padding: 10px 15px;
+    width: max-content;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+}
+.outgoing{
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    text-align: right;
+}
+.user-input{
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    margin-left: -16px;
+    padding: 20px 20px 20px 20px;
+    background: rgba(94, 74, 227, 1);
+}
+.user-input input{
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 6px 20px;
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.user-input button{
+    background: rgba(200, 200, 200, 0.87);
+    border: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    letter-spacing: 0.1rem;
+    outline: none;
+    border-radius: 0 10px 10px 0;
 }
