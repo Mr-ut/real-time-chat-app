@@ -1,24 +1,32 @@
 const socket = io();
+
+
 // you will have have to give room and username here;
 // var username = document.querySelector('#username1').value;
 // var room = document.querySelector('#room1').value;
 var username;
 var room;
 var chats = document.querySelector('.chats');
-var users_list = document.querySelector('.users-list');
+var users_list = document.querySelector('.grp_name');
 var users_count = document.querySelector('.users-count');
 var msg_send=document.querySelector('#user-send');
 var user_msg=document.querySelector('#user-msg');
-
+var user_name=document.querySelector('#username1');
+// var username = require('./server.js');
 
 
 do{
     username = prompt("Enter your name");
-    room = prompt("Enter room name");
-}while(!username || !room);
+    // room = prompt("Enter room name");
+}while(!username );
 
+// socket.on('username', (username) => {
+//     console.log(`Received username from socket: ${username}`);
+//     // socket.emit('new-user-joined', username);
+//   });
 
-
+  
+/* */
 socket.emit('new-user-joined', username);
 
 socket.on('user-connected', (socket_name)=>{
@@ -44,7 +52,8 @@ socket.on('user-list', (users)=>{
     users_list.innerHTML = '';
     users_arr=Object.values(users);
     for(var i=0;i<users_arr.length;i++){
-        let p=document.createElement('p');
+        let p=document.createElement('div');
+        p.classList.add('items');
         p.innerText=users_arr[i];
         users_list.appendChild(p);
     //
@@ -61,6 +70,7 @@ msg_send.addEventListener('click', ()=>{
         appendMessage(data, 'outgoing');
         socket.emit('message', data);
         user_msg.value = '';
+        user_msg.focus();
     }
 })
 

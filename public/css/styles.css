@@ -67,9 +67,14 @@
 .items{
     line-height: 20px;
     padding-left: 2rem;
+    margin-bottom: 4px;
     padding: 4px 20px; 
     background: rgba(69, 55, 166, 1);
     border-color: rgba(69, 55, 166, 1);
+}
+.items p{
+    
+    border-bottom: 1px solid  rgba(94, 74, 227, 0.87);
 }
 .messages{
     background: rgba(230, 230, 230, 1);
