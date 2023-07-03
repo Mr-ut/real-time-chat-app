@@ -12,6 +12,10 @@ var users_count = document.querySelector('.users-count');
 var msg_send=document.querySelector('#user-send');
 var user_msg=document.querySelector('#user-msg');
 var user_name=document.querySelector('#username1');
+
+
+let audio1 = new Audio('./sound/mouse_click.mp3');
+let audio2 = new Audio('./sound/ping.mp3');
 // var username = require('./server.js');
 
 
@@ -30,6 +34,7 @@ do{
 socket.emit('new-user-joined', username);
 
 socket.on('user-connected', (socket_name)=>{
+    audio2.play();
     // console.log(username + " connected");
     userJoinLeft(socket_name,'joined');
 });
@@ -62,6 +67,7 @@ socket.on('user-list', (users)=>{
 });
 
 msg_send.addEventListener('click', ()=>{
+    audio1.play();
     let data={
         'username': username,
         'message': user_msg.value
@@ -88,5 +94,6 @@ function appendMessage(data, status){
 
 
 socket.on('message', (data)=>{
+        audio2.play();
     appendMessage(data, 'incoming');
 })  
