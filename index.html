@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <!-- <img src="CHAT APP.png" alt="chatapp" class="chat_logo"> -->
+        <h1 class="logo">CHAT APP</h1>
+        <button class="logout">LogOut</button>
+    </header>
+    <div class="content">
+            <div class="groups">
+                <span class="group_logo margin">
+                    <img src="/img/groups.png" alt="group logo" width="30vw">&nbsp;
+                    Groups 
+                </span>
+                
+                <div class="grp_name margin">
+                    <div class="items">
+                        People
+                    </div>
+                    <br>
+                    <!-- <div class="items">
+                        web
+                    </div>
+                    <br>
+                    <div class="items">
+                        web
+                    </div> -->
+                </div>
+            </div>
+        
+        <div class="chat-window ">
+            <div class="chats">
+                <!-- <div class="user-join">
+                    <p><b>Harry</b> joined the chat</p>
+                </div>
+                <div class="message incoming">
+                    <h5>Harry</h5>
+                    <p>Hii there</p>
+                </div>
+                <div class="message outgoing">
+                    <h5>Ana</h5>
+                    <p>Hii , how are you</p>
+                </div> -->
+            </div>
+            <div class="user-input">
+                <input id="user-msg" type="text" placeholder="Message">
+                <button id="user-send" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/js/client.js"></script>
+</body>
+</html>

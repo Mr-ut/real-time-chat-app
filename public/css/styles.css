@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: rgba(94, 74, 227, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+.logo{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-left: 30px;
+}
+.chat_logo{
+    width: 15vw;
+    height: 4vh;
+    margin-left: 30px;
+}
+.logout{
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 91.3vh;
+}
+.groups{
+    width: 30%;
+    /* height: 94.6vh; media query */
+    background: rgba(94, 74, 227, 0.87);
+    padding-right: 20px;
+    margin-right: 1rem;
+}
+.group_logo{
+    display: flex;
+    align-items: center;
+    
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* border: 1px solid white; */
+    font-size: 1.0rem;
+    font-weight: 600;
+    
+}
+
+.margin{
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+.grp_name{
+    /* background: rgba(69, 55, 166, 1); */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.items{
+    line-height: 20px;
+    padding-left: 2rem;
+    margin-bottom: 4px;
+    padding: 4px 20px; 
+    background: rgba(69, 55, 166, 1);
+    border-color: rgba(69, 55, 166, 1);
+}
+.items p{
+    
+    border-bottom: 1px solid  rgba(94, 74, 227, 0.87);
+}
+.messages{
+    background: rgba(230, 230, 230, 1);
+    width: 100%;
+}
+
+/*Login Page*/
+.login_form{
+    /* background: rgba(94, 74, 227, 0.87); */
+    /* border: 1px solid white; */
+    
+    padding-left: 37%;
+    padding-top: 18%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    /* padding-left: 40%;
+    padding-top: 20%; */
+    padding: 29px 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-color: rgba(69, 55, 166, 1);
+}
+form input{
+    padding: 6px 10px;
+    
+    border: none;
+}
+form button{
+    margin-top: 10px;
+    padding: 6px;
+    color: white;
+    border: none;
+    background: rgb(114, 118, 239);
+}
+form button:hover{
+    cursor: pointer;
+    border: 1px solid rgba(69, 55, 166, 1);
+}
+.chat-window{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.chats{
+    min-height: 78.8vh;
+    padding: 10px;
+}
+.user-join{
+    font-size: 0.9rem;
+    background-color: rgba(204, 204, 204, 1);
+    border-radius: 10px;
+    /* width: max-content; */
+    width: 10rem;
+    padding: 10px 10px;
+    margin: 3px auto;
+}
+.message{
+    background-color: rgba(204, 204, 204, 1);
+    padding: 10px 15px;
+    width: max-content;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+}
+.outgoing{
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    text-align: right;
+}
+.user-input{
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    margin-left: -16px;
+    padding: 20px 20px 20px 20px;
+    background: rgba(94, 74, 227, 1);
+}
+.user-input input{
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 6px 20px;
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.user-input button{
+    background: rgba(200, 200, 200, 0.87);
+    border: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    letter-spacing: 0.1rem;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+}
+
+
+#user-send:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
