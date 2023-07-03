@@ -184,3 +184,9 @@ form button:hover{
     outline: none;
     border-radius: 0 10px 10px 0;
 }
+
+#user-send:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
